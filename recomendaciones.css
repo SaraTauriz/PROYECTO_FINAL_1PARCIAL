@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif; /*tipografia helvetica o arial*/
+	/*COLOR de titulo */ 
+	color: rgb(0, 0, 0);
+	background: #f2f2f2; 
+	font-size: 1em;/*vista de un poquito grande el texto*/
+	line-height: 1.5em; /*altura de una linea*/ 
+}
+
+/*es lo que controla los titulos generales*/ 
+h1 {
+	font-size: 1.6em;
+	line-height: 1.3em;
+	margin: 40px 0 ;
+	margin-bottom: 15px;
+	/*posicion del titulo*/
+	text-align: center;
+	font-weight: 300;
+	/*bordes generales en cuadrado*/
+	border: rgb(131, 64, 64) 3px solid;
+	/*el borde radius es lo que seria el curbeado*/
+	border-radius: 20px;
+	background-color: #9b5f98;
+	padding: 10px;/*espacio de la parte inferior*/
+	width: 50%;
+
+}
+
+
+/*Separacion de los parrafos como si fuera un enter*/ 
+p {
+	margin: 0 0 1.5em 0;/*margen de la caja*/
+	text-align: justify;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+#main-header {
+	/*estilo de barra de opciones principales*/
+	background: #333;/*color de fondo*/
+	color: white;/*color de texto*/
+	height: 80px;/*altura*/
+}	
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	/*estilo para el logo*/
+	float: left; /*alinear al izquierda*/
+	padding: 15px 0 0 20px;
+	text-decoration: none;/*texto subrayado ninguno*/
+}
+	#logo-header:hover {
+		color: #0b76a6;/*color letra*/
+	}
+	
+	#logo-header .site-name {
+		display: block;/*renderizado por bloques como un div*/
+		font-weight: 700;/*negrita de texto*/
+		font-size: 1.2em;/*divisionde de letra*/
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+
+				/*elemento de la pantalla de fondo de las palabras*/ 
+                #main-content {
+					/*fondo*/ 
+                    background: white;
+					/*tendremos un ancho de la pantalla del 90%*/ 
+                    width: 90%;
+					/*pero tendra un ancho maximo de 1050px es lo que se ve como una hoja*/ 
+                    max-width: 1050px;
+					/*esto es para que quede centrado: tendremos 20px de arriba y abajo y de los lados automatico*/ 
+                    margin: 10px auto;
+                    box-shadow: 0 0 10px rgba(0,0,0,.1);
+                }
+                
+                    /*Apartado de cuerpo de la pagina*/
+                    #main-content header,
+                    #main-content .content {
+                        padding: 0px 50px 0px 50px;
+                    }
+					/*diseño del indice de la pagina*/
+                    #main-footer {
+                        background: #333;
+                        color: white;
+                        text-align: left;/*texto alineado a la izquierda*/
+                        padding: 20px;
+                        margin-top: 40px;/*maregen superior de 40px*/
+                    }
+                        #main-footer p {
+							/*contenedor de 2021 Grupo 3*/
+                            margin: 0;
+                        }
+                        /*contenedor de Grupo 3*/
+                        #main-footer a {
+                            color: white;
+                        }
+
+/*apartado de buscar*/
+.box{
+	padding-top: 10px;
+	padding-right: 10px;
+	overflow: hidden;/*para que el texto que sobresalga del div no sea visible*/
+	vertical-align: middle;/*alineado vertical a la mita de las letras minúsculas */
+	text-align: right;
+	white-space: nowrap;/*determina como se maneja el esapcio en blanco*/
+  }
+  .container-4{
+	  /*diseño del apartado del buscador*/
+	font-size: 1.4em;
+	line-height: 1.3em;
+  }
+
+  #pasos-buton{
+	  height: 40px;
+	  width: 200px;
+	  background: #2f596d;
+	  cursor: pointer;
+  }
+  #pasos-buton1{
+	height: 40px;
+	width: 200px;
+	background: #417469;
+	cursor: pointer;
+}
+
+#pasos-buton:hover{
+	background: #1da0dd;
+}
+#pasos-buton1:hover{
+  background: #0ad6aa;
+}
+
+.listo{
+	/*estilo para el diseño listo*/
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+}
+.link-titulo{
+	/*dirreccion a la pagina de visualizarPDF*/
+	text-decoration: none;
+	cursor: pointer;
+}

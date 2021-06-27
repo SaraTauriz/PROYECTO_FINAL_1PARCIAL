@@ -1,0 +1,245 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif; /*tipografia helvetica o arial*/
+	/*COLOR de titulo */ 
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;/*vista de un poquito grande el texto*/
+	line-height: 1.5em; /*altura de una linea*/ 
+}
+
+/*es lo que controla los titulos generales*/ 
+h1 {
+	font-size: 2.3em;/*tamano de la fuente*/
+	line-height: 1.3em;/*tamano de la fuente*/
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;/*tamano de fuente negrita*/
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+#main-header {
+	/*estilo de barra de opciones principales*/
+	background: #333;/*color de fondo*/
+	color: white;/*color de texto*/
+	height: 80px;/*altura*/
+}	
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	/*estilo para el logo*/
+	float: left; /*alinear al izquierda*/
+	padding: 15px 0 0 20px;
+	text-decoration: none;/*texto subrayado ninguno*/
+}
+	#logo-header:hover {
+		color: #0b76a6;/*color letra*/
+	}
+	
+	#logo-header .site-name {
+		display: block;/*renderizado por bloques como un div*/
+		font-weight: 700;/*negrita de texto*/
+		font-size: 1.2em;/*divisionde de letra*/
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+			nav ul li a:hover {
+				background: #0b76a6;
+			}
+
+			/*elemento de la pantalla de fondo de las palabras*/ 
+			#main-content {
+				/*fondo*/ 
+				background: white;
+				/*tendremos un ancho de la pantalla del 90%*/ 
+				width: 90%;
+				/*pero tendra un ancho maximo de 1050px es lo que se ve como una hoja*/ 
+				max-width: 1050px;
+				/*esto es para que quede centrado: tendremos 20px de arriba y abajo y de los lados automatico*/ 
+				margin: 10px auto;
+				box-shadow: 0 0 10px rgba(0,0,0,.1);
+			}
+				/*Apartado de cuerpo de la pagina*/
+				#main-content header,
+				#main-content .content {
+					padding: 0px 50px 0px 50px;
+				}
+				/*diseño del indice de la pagina*/
+				#main-footer {
+					background: #333;
+					color: white;
+					text-align: left;/*texto alineado a la izquierda*/
+					padding: 20px;
+					margin-top: 40px;/*maregen superior de 40px*/
+				}
+					#main-footer p {
+						/*contenedor de 2021 Grupo 3*/
+						margin: 0;
+					}
+					/*contenedor de Grupo 3*/
+					#main-footer a {
+						color: white;
+					}
+
+
+
+/***************************************************************************************/
+
+
+.container {
+	/*contenedor del recuador de el inicio sesion*/
+	align-items: center;
+	justify-content: center;
+	min-height: 50vh;
+	margin: 60px;
+
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(24, 82, 116, 0.3);
+	overflow:auto;
+	width: 500px;
+	max-width: 100%;
+
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header h2 {
+    color: #022729;
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+/*Corregido el texto de correo electronico y contraseña con::: text-align : left*/
+.form-control {
+	/*apartado del div del correo electronico y contraseña*/
+	text-align: left;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+
+/*BOTON DE ACCEDER*/
+.form button {
+	background-color: #2d3836;
+	border: 2px solid #2d3836;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}

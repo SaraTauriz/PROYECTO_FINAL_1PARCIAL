@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="inicioSesion.css">
+   <body background="fondo.png"></body>
+</head>
+
+<!--Esta parte le pertenece a la parte de inicio-->
+<!--********************************-->
+<body>
+
+    <header id="main-header">
+		
+		<a id="logo-header" href="#"> 
+			<span class="site-name"><img src="logo1.png" href="Principal.html" alt="logo" height="50px" width="250px"></span>
+			
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="Principal.html">Inicio</a></li>
+				<li><a href="Categoria.html">Categorias</a></li>
+                <li><a href="Recormendaciones.html">Subir PDF</a></li>
+                <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+                <li><a href="Registro.html">Registrame</a></li>
+			</ul> 
+		</nav><!-- / nav -->
+
+	</header><!-- / #main-header -->
+
+<!--*************************************************-->
+<!--Esta parte centra todo el contenido de inicio de sesion-->
+<center>
+    <!--este es el titulo de inicio de sesion-->
+<div class="container">
+    <div class="header">
+        <center>
+        <h2>Inicie Sesión</h2>
+        </center>
+    </div>
+    <form id="form" class="form">
+<!--aqui esta la parte del nonbre del correo y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="email">Correo Eléctronico:</label>
+            <input type="email" placeholder="ejemplo: nombre@email.com" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+<!--aqui el de la parte de contraseña igual que el anterior-->
+        <div class="form-control">
+            <label for="password">Contraseña:</label>
+            <input type="password" placeholder=" ingrese la primera contraseña" id="password"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+       <!--aqui se encuentra el boton acceder-->
+        <button>Acceder</button>
+    </form>
+
+</div>
+</center>
+<!--este es el enlace donde esta vinculado con el js-->
+<script src="inicioSesion.js"></script>
+
+</body>
+
+</html>

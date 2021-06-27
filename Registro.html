@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="registro.css">
+   <body background="fondo.png"></body>
+</head>
+<!--Esta parte le pertenece a la parte de registro del usuario-->
+<!--********************************-->
+<body>
+<!--Poner aqui la barra de inicio-->
+
+<header id="main-header">
+		
+    <a id="logo-header" href="#"> 
+        <span class="site-name"><img src="logo1.png" href="Principal.html" alt="logo" height="50px" width="250px"></span>
+        
+    </a> <!-- / #logo-header -->
+
+    <nav>
+        <ul>
+            <li><a href="Principal.html">Inicio</a></li>
+				<li><a href="Categoria.html">Categorias</a></li>
+                <li><a href="Recormendaciones.html">Subir PDF</a></li>
+                <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+                <li><a href="Registro.html">Registrame</a></li>
+        </ul> 
+    </nav><!-- / nav -->
+
+</header><!-- / #main-header -->
+
+<!--*************************************************-->
+<!--Esta parte centra todo el contenido de registro de usuario o crear cuenta-->
+<center>
+    <!--este es el titulo de crear cuenta-->
+<div class="container">
+    <div class="header">
+        <center>
+        <h2>Crear Cuenta</h2>
+        </center>
+    </div>
+    <form id="form" class="form">
+<!--aqui esta la parte del nonbre de usuario y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" placeholder="ejemplo: PercyLaMaquina" id="username" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+<!--aqui esta la parte del nonbre y apellido reales y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="username">Nombres y Apellidos:</label>
+            <input type="text" placeholder="ejemplo: Juan Carlos Zambrano Domingues" id="apellido" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+<!--aqui esta la parte del numero de telefono y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="numerotelefono">Numero de Telefono:</label>
+            <input type="text" placeholder="ejemplo: 0943982847" id="numerotelefono" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+<!--aqui esta la parte del correo electronico y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="email">Correo Eléctronico:</label>
+            <input type="email" placeholder="ejemplo: nombre@email.com" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+<!--aqui esta la parte de ingresar una contraseña y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="password">Contraseña:</label>
+            <input type="password" placeholder=" ingrese la primera contraseña" id="password"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+<!--aqui esta la parte donde se debe repetir la contraseña y la caja lo cual esta enlazada con java-->
+        <div class="form-control">
+            <label for="password2">Repetir Contraseña:</label>
+            <input type="password" placeholder="confirme la contraseña" id="password2"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+    
+        </div>
+        <!--este es el boton en cual se dara click en egistrar cuando este lleno todo-->
+        <button>Registrar</button>
+    </form>
+
+</div>
+</center>
+<!--este es el enlace donde esta vinculado con el js-->
+<script src="registro.js"></script>
+
+</body>
+
+</html>
